@@ -15,12 +15,12 @@
     <div class="hero" >
         <div class="navbar">
             <img src="./logo.png" alt="logo">
-            <button type="button">Start</button>
+            <button id="start" type="button">Start</button>
         </div>
         <div class="content">
             <small>Welcome to our</small>
             <h1>World's Datdz</h1>
-            <button type="button">Stop</button>
+            <button id="stop"  type="button">Stop</button>
         </div>
         <div class="side-bar">
             <img src="./menu.png" class="menu" alt="menu">
@@ -38,7 +38,7 @@
             </div>
         </div>
 
-        <div class="bubbles">
+        <div id="bubbles" class="bubbles">
             <img src="./bubble.png" alt="">
             <img src="./bubble.png" alt="">
             <img src="./bubble.png" alt="">
@@ -66,6 +66,12 @@
 </body>
 </html>
 <script>
+    $('#stop').click(function(){
+        $( "#bubbles" ).children().css("animation","null");
+    })
+    $('#start').click(function(){
+        location.reload();
+    })
     $('#a').click(function(){alert("bấm cc")})
     $('#b').click(function(){alert("bấm cc")})
     $('#click').click(function(){
