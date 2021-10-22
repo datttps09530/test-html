@@ -80,7 +80,7 @@ h1{
 }
 .bubbles img{
     width: 50px;
-    animation: bubble 10s linear infinite;
+    animation: bubble 3s linear infinite;
 }
 .bubbles {
     width: 100%;
